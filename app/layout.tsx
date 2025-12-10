@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: 'Jay – AI / ML',
     template: '%s – Jay',
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Personal portfolio showcasing information about Jay, his projects, and ways to connect.',
 };
 
 const geist = Geist({
