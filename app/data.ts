@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     name: 'M-it - Minimal Git Client',
     description:
       'working on m-it, a minimal git client for when i’m tired of typing full git commands.',
-    link: 'https://pro.motion-primitives.com/',
+    link: 'https://example.com/',
     video:
       '/videos/m-it.mp4',
     id: 'project1',
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Grain - Minimal Blockchain in Go',
     description: 'creating a go-based blockchain from scratch to explore distributed systems.',
-    link: 'https://motion-primitives.com/',
+    link: 'https://example.com/',
     video:
       '/videos/grain.mp4',
     id: 'project2',
@@ -53,7 +53,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Full-stack Developer',
     start: '2024',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://linkedin.com/in/jayesh0735',
     id: 'work2',
   },
   {
@@ -61,36 +61,36 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Front-end Developer',
     start: '2023',
     end: '2024',
-    link: 'https://ibelick.com',
+    link: 'https://linkedin.com/in/jayesh0735',
     id: 'work3',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
+    title: 'Why I’m Transitioning into AI',
     description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    link: '/blog/why-im-transitioning-into-ai',
     uid: 'blog-1',
   },
   {
-    title: 'Why I left my job to start my own company',
+    title: 'What Full-Stack Development Taught Me Before AI',
     description:
       'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    link: '/blog/what-fullstack-taught-me-before-ai',
     uid: 'blog-2',
   },
   {
-    title: 'What I learned from my first year of freelancing',
+    title: 'Leaving My Comfort Zone',
     description:
       'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    link: '/blog/leaving-my-comfort-zone',
     uid: 'blog-3',
   },
   {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
+    title: 'Building Products That Don’t Crash',
     description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
+    link: '/blog/building-products-that-dont-crash',
     uid: 'blog-4',
   },
 ]

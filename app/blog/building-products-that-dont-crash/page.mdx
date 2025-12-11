@@ -1,0 +1,103 @@
+# Building Products That Don’t Crash
+
+One of the quiet truths of engineering is that reliability rarely gets celebrated.  
+No user opens an app and thinks, “Wow, this didn’t break — incredible work.”  
+But the moment something fails, everyone notices.
+
+Reliability doesn’t make noise.  
+Failure does.
+
+My early full-stack projects taught me this lesson with a kind of ruthless consistency.  
+And now that I’m working more with AI systems, the importance of reliability has only increased.
+
+---
+
+## The First Time Reliability Actually Hit Me
+
+I still remember pushing a feature that worked flawlessly on my machine, only to watch it fall apart once real users touched it.  
+It wasn’t a dramatic crash — it was worse.  
+It was inconsistent.
+
+Some actions worked.  
+Others didn’t.  
+And no one could reproduce the same issue twice.
+
+That was the moment I understood why senior engineers always talk about defensive coding and observability like they're sacred rituals.
+
+---
+
+## The Principles I Learned the Hard Way
+
+These aren’t theoretical guidelines.  
+These are battle-tested lessons from projects that misbehaved at the worst possible times.
+
+### **1. Logs are non-negotiable**
+Good logs don’t just help you debug — they help you think.  
+They bridge the gap between what you believe your system is doing and what it’s actually doing.
+
+### **2. Predictability beats cleverness**
+Clever code is fun to write and painful to maintain.  
+Predictable code is boring to write and beautiful to scale.
+
+### **3. Test the edges, not just the center**
+Most bugs live at the edges of the system — the weird inputs, the rare states, the forgotten paths.
+
+### **4. Handle failure like it’s guaranteed**
+Because it is.  
+Systems fail. Networks fail. APIs fail.  
+The only variable is whether your product collapses with them.
+
+---
+
+## Why Reliability Matters Even More in AI
+
+AI introduces a new kind of complexity: uncertainty.
+
+A model won’t crash the way a backend might.  
+It will do something much subtler — it will be confidently wrong.
+
+That’s harder to detect.  
+Harder to log.  
+Harder to guard against.
+
+Which means the infrastructure around it must be stronger:
+
+- validation layers  
+- fallback responses  
+- reproducible prompts  
+- constraints and guardrails  
+- rate-limiting and retries  
+- monitoring for drift  
+
+AI systems aren’t fragile because models are weak.  
+They’re fragile because the behavior is probabilistic.
+
+Reliability becomes your anchor.
+
+---
+
+## The Part Nobody Talks About
+
+Building reliable systems is not glamorous.  
+It’s not something you post on Twitter.  
+It’s not something recruiters hype.
+
+But it’s the difference between a system that feels like magic and a system that feels like a gamble.
+
+The most impressive products I’ve used weren’t the ones with the most features.  
+They were the ones that made me forget about the technology entirely.
+
+That’s reliability.
+
+---
+
+## Closing Reflection
+
+Anyone can build something that works once.  
+But building something that works *every time* requires consistency, patience, and a kind of engineering humility that takes years to develop.
+
+As I dive deeper into AI, I’m realizing that reliability isn’t a supporting skill — it’s a foundational one.
+
+The model can be brilliant.  
+The system around it must be stable.
+

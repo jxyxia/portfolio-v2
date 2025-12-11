@@ -1,42 +1,43 @@
-import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import './globals.css'
-import { Header } from './header'
-import { Footer } from './footer'
-import { ThemeProvider } from 'next-themes'
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { Header } from "./header";
+import { Footer } from "./footer";
+import { ThemeProvider } from "next-themes";
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
-  themeColor: '#ffffff',
-}
+  themeColor: "#ffffff",
+};
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL("https://nim-fawn.vercel.app/"),
   alternates: {
-    canonical: '/'
+    canonical: "/",
   },
   title: {
-    default: 'Jay – AI / ML',
-    template: '%s – Jay',
+    default: "Jay – AI / ML",
+    template: "%s – Jay",
   },
-  description:  'Personal portfolio showcasing information about Jay, his projects, and ways to connect.',
+  description:
+    "Personal portfolio showcasing information about Jay, his projects, and ways to connect.",
 };
 
 const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
+  variable: "--font-geist",
+  subsets: ["latin"],
+});
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -50,7 +51,12 @@ export default function RootLayout({
           defaultTheme="system"
         >
           <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
-            <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
+            {/* Responsive site container:
+                - max-w-5xl keeps the site reasonably wide on desktop
+                - px values create small, consistent left/right gutters
+                - flex-1 ensures pages stretch vertically
+            */}
+            <div className="relative mx-auto w-full max-w-5xl flex-1 px-6 md:px-8 lg:px-12 pt-20">
               <Header />
               {children}
               <Footer />
@@ -59,5 +65,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
