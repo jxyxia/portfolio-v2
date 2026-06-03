@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080808;
+  --surface: #111111;
+  --ink: #f0ede8;
+  --ink2: #a0a0a0;
+  --ink3: #555555;
+  --border: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink3);
+}
+
+/* Fix descender clipping on all text */
+p {
+  line-height: 1.8 !important;
+  overflow: visible;
+}
+
+div {
+  overflow: visible;
+}
+
+.text-ink2, [class*="leading-"] {
+  overflow: visible !important;
+}
