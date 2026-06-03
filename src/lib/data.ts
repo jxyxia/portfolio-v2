@@ -26,17 +26,6 @@ export const PROJECTS = [
   },
   {
     id: "02",
-    tag: "Web Dev",
-    title: "Prezns Studio Site",
-    description:
-      "Full-stack agency website with client CMS, SEO tooling, and analytics dashboard.",
-    stack: ["Next.js", "Tailwind", "SEO"],
-    link: "https://github.com/jxyxia",
-    liveLink: "https://prezns.studio",
-    featured: false,
-  },
-  {
-    id: "03",
     tag: "Mobile / IoT",
     title: "IoT Dashboard",
     description:
@@ -44,6 +33,18 @@ export const PROJECTS = [
     stack: ["React Native", "MQTT", "Node.js"],
     link: "https://github.com/jxyxia",
     liveLink: "#",
+    featured: false,
+  },
+
+  {
+    id: "03",
+    tag: "Web Dev",
+    title: "CloudFN - Serverless Function-as-a-Service Platform",
+    description:
+      "A serverless platform built on top of AWS, providing a seamless developer experience for deploying and managing serverless functions with a user-friendly interface and robust monitoring tools.",
+    stack: ["Python", "Streamlit", "AWS"],
+    link: "https://github.com/jxyxia",
+    liveLink: "https://cloudfn.dev",
     featured: false,
   },
 ];
