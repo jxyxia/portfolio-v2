@@ -23,7 +23,7 @@ export default function Contact() {
         <FadeUp delay={0.05}>
           <h2 className="font-serif text-[32px] md:text-[48px] leading-[1.2] md:leading-[1.15] mb-4 md:mb-6">
             Let&apos;s work
-            <br className="hidden sm:block" />
+            <br />
             <em className="italic text-ink2">together.</em>
           </h2>
           <p className="text-[13px] md:text-[14px] text-ink2 leading-[1.8] mb-8 md:mb-10">
