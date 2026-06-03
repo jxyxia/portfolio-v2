@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="max-w-[760px] mx-auto px-6 pb-20">
+    <main className="max-w-[760px] mx-auto px-4 sm:px-6 pb-12 sm:pb-20">
       <Navbar />
       <Hero />
       <About />

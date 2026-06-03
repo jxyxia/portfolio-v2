@@ -11,16 +11,16 @@ const DETAILS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-[72px] border-b border-border">
+    <section id="about" className="py-12 md:py-[72px] border-b border-border">
       <FadeUp>
-        <p className="font-mono text-[11px] text-ink3 tracking-[0.1em] uppercase mb-8">
+        <p className="font-mono text-[11px] text-ink3 tracking-[0.1em] uppercase mb-6 md:mb-8">
           01 — About
         </p>
       </FadeUp>
 
-      <div className="grid grid-cols-2 gap-12 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
         <FadeUp delay={0.05}>
-          <div className="text-[15px] text-ink2 leading-[2] space-y-6 pb-4">
+          <div className="text-sm md:text-[15px] text-ink2 leading-[1.8] md:leading-[2] space-y-4 md:space-y-6 pb-4">
             <p>
               I&apos;m a third-year Computer Engineering student at the
               University of Mumbai, graduating August 2027. I like building things on the internet, writing code that usually works, and obsessing over the details that make products feel right.
